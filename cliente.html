@@ -1,0 +1,153 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CLIENTE</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vista-a.css">
+
+    <!-- Responsive css -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Guacamaya.png">
+
+</head>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- ******************************imagen logo******************* 
+                <a href="#" class="navbar-left">
+                    <img id="logo" style="max-width:110px; height: auto; margin-top: -2px;" src="">
+
+                </a>
+                -->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href='#'><span class='glyphicon glyphicon-shopping-cart'></span> Paquetes Adquiridos</a>
+                </li>
+            </ul>
+
+            <!--
+                <ul class="nav navbar-nav">
+                    <li id="nosotros"><a href="#" data-toggle="modal" data-target=".bd-example-modal-sm">Nosotros</a>
+                    </li>
+                    <li id="addTask"><a data-target="#myTarea" data-toggle="modal" href="#">Adicionar Tarea</a></li>
+                    
+                </ul>
+-->
+
+            <ul class="nav navbar-nav navbar-right">
+                <li data-toggle='modal' data-target='#'>
+                    <a href='javascript:login()'><span class='glyphicon glyphicon-log-in'></span> salir</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row content">
+        <div class="w3-container">
+            <div class="panel-group">
+
+                <body>
+                    <div id="portfolio" class="text-center paddsection">
+                        <div class="container">
+                            <div class="section-title text-center">
+                                <h2>Paquetes Turisticos</h2>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <a href="javascript:cayonning()"><img class="card-img-top"
+                                            src="images/reserva_natural_y_ecoturistica_la_avispa_canyoning.jpg"
+                                            alt=""></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="javascript:cayonning()" id="titulo">Canyoning La Avispa</a>
+                                        </h4>
+                                        <h5>$134.000</h5>
+                                        <p class="card-text">CANYONING: Superar obstáculos del cañon Ingeri, disfrutando
+                                            de saltos
+                                            libres, toboganes naturales y descenso de cascadas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <a href="javascript:torrentismo()"><img class="card-img-top"
+                                            src="images/torrentismo.jpg" alt=""></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="javascript:torrentismo()" id="titulo">Torrentismo La Avispa</a>
+                                        </h4>
+                                        <h5>$89.000</h5>
+                                        <p class="card-text">TORRENTISMO: Descenso de una cascada con una cuerda de 45
+                                            mts. de longitud.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <a href="javascript:trekking()"><img class="card-img-top" src="images/trekking.jpg"
+                                            alt=""></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="javascript:trekking()" id="titulo">Trekking La Avispa</a>
+                                        </h4>
+                                        <h5>$67.000</h5>
+                                        <p class="card-text">TREKKING: Recorrido de 3 Kms. y nivel 1 de dificultad,
+                                            caminando por
+                                            senderos y parte de una quebrada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="js/app.js"></script>
+                </body>
+
+</html>

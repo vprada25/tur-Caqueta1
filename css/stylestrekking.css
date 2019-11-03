@@ -1,0 +1,49 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/ba/93/08/ba93089f2444e0cc1e851ceb8bdf316a.jpg');
+    background-attachment: fixed;
+}
+
+.content {
+    height: 700px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    background: rgba(240, 235, 235, 0.7);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center center;
+    }
+    header video {
+        display: block;
+    }
+}
